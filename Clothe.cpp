@@ -6,10 +6,10 @@ Clothe::Clothe(string name,
                float purchase_price,
                float sale_price,
                float fashion,
-               float age_degree = 1,
-               float gendere_degree = 1,
-               unsigned int count_in_stock = 0,
-               float discont = 0) : Item(name, manufacturer, purchase_price, sale_price, count_in_stock, discont)
+               float age_degree,
+               float gendere_degree,
+               unsigned int count_in_stock ,
+               float discont) : Item(name, manufacturer, purchase_price, sale_price, count_in_stock, discont)
 {
   this->age_degree = age_degree;
   this->gender_degree = gendere_degree;
@@ -21,3 +21,10 @@ string Clothe::getMaterial() { return material; }
 unsigned int Clothe::getAge() { return age; }
 unsigned char Clothe::getGender() { return gender; }
 float Clothe::getFashionDegree() { return fashion; }
+void Clothe::printDetails(){
+    Item::printDetails();  
+    printf("  ---\n");
+    printf("  Модность:         %.2f / 10\n", fashion);
+    printf("  Коэф. возраста:   %.2f\n", (float)age_degree);
+    printf("  Коэф. пола:       %.2f\n", (float)gender_degree);
+}

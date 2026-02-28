@@ -29,4 +29,5 @@ public:
 
   float getCaloricContentOnOne();
   float getCalroicContentOnMoney();
+  void printDetails();
 };

@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 using std::string;
 
@@ -29,4 +30,7 @@ public:
   void setPurchasePrice(float new_price);
   void setSalePrice(float new_price);
   void setDiscont(float new_discont);
+  void addStock(unsigned int count);
+  void sell(unsigned int count);
+  virtual void printDetails();
 };

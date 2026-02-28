@@ -20,4 +20,5 @@ public:
   bool getDangerousForChildrens();
   bool getNecessaryForApocalypse();
   unsigned char getFlammabilityClass(); // 1 - difficult to ignite, 2 - moderately flammable, 3 - flammable
+  void printDetails();
 };

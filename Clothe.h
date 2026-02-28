@@ -29,6 +29,7 @@ public:
   float getFashionDegree();
 
   // TODO: реализовать нормальные коэфициенты пола/возраста и учет в модность
-  virtual void changeFashion(float advertisement);
-  virtual void changePrice();
+  void changeFashion(float advertisement); //virtual
+  void changePrice();//virtual
+  void printDetails();
 };
