@@ -21,7 +21,7 @@ unsigned char HouseholdGood::getFlammabilityClass() { return flammability_class;
 void HouseholdGood::printDetails() {
     Item::printDetails();
     printf("  ---\n");
-    char* fl = flammability_class == 1 ? "1 (трудновоспламен.)"
+    const char* fl = flammability_class == 1 ? "1 (трудновоспламен.)"
                    : flammability_class == 2 ? "2 (умеренно горючий)"
                                              : "3 (горючий)";
     printf("  Горючесть:        %s\n", fl);
